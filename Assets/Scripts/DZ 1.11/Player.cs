@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public LostDissolving LostDissolving;
     public AudioClip AudioClip;
     public ParticleSystem _jumpSpot;
+    public ParticleSystem _death;
     private AudioSource _audioClip;
 
     public Platform CurrentPlatform;
@@ -19,7 +20,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         _audioClip = GetComponent<AudioSource>();
-        _jumpSpot = GetComponent<ParticleSystem>();
+        
      
     }
     public void ReachFinish()
@@ -39,7 +40,9 @@ public class Player : MonoBehaviour
     public  void Die()
     {
         Game.OnPlayerDied();
-        
+        LostDissolving.UpdateBallMaterial();
         Rigidbody.velocity = Vector3.zero;
+        _death.gameObject.SetActive(true);
+        _death.Play();
     }
 }

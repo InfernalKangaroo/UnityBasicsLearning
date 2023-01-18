@@ -10,5 +10,6 @@ public class Finish : MonoBehaviour
         player.ReachFinish();
         _finish = GetComponent<ParticleSystem>();
         _finish.Play();
+
     }
 }

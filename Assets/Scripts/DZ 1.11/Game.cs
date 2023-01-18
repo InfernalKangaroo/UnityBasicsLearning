@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Game : MonoBehaviour
 {
     public Controls Controls;
-   
+    
     
     public enum State
     {

@@ -44,7 +44,7 @@ public class Gamemanager : MonoBehaviour
 
         if (Lost) 
         {
-            Time.timeScale = 0;
+            Time.timeScale = 1;
             LoseScreen.SetActive(true);
             
             if (Input.GetButtonDown("Fire1")) 
@@ -55,7 +55,7 @@ public class Gamemanager : MonoBehaviour
 
         if (Won)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 1;
             WinScreen.SetActive(true);
             GameScreen.SetActive(false);
 
