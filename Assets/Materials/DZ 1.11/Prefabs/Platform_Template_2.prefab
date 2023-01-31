@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 504456200524691412, guid: b49800d09a4281f45abe67042e41d455, type: 3}
+      propertyPath: Destroyer
+      value: 
+      objectReference: {fileID: 3461017271740210132, guid: 0ed061f826d682046b6170cc590f84e3, type: 3}
     - target: {fileID: 693166231179002188, guid: b49800d09a4281f45abe67042e41d455, type: 3}
       propertyPath: m_Name
       value: Platform_Template_2
